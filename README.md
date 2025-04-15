@@ -41,4 +41,4 @@ After using software like docker a lot I wanted to understand the underlying bas
 
 ## Learning Resources
 
-- Liz Rice
+- [Liz Rice at GOTO 2018](https://www.youtube.com/watch?v=8fi7uSYlOdc)
