@@ -11,6 +11,7 @@ After using software like docker a lot I wanted to understand the underlying bas
 - cmake
 - gcc
 - root privileges
+- [alpine linux mini root filesystem](https://www.alpinelinux.org/downloads/) located at /container/alpine
 
 ## Build Instructions
 
@@ -40,4 +41,4 @@ After using software like docker a lot I wanted to understand the underlying bas
 
 ## Learning Resources
 
-- Liz Rice (in go)
+- Liz Rice
