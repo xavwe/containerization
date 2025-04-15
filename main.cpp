@@ -9,32 +9,16 @@
 
 constexpr int STACK_SIZE = 1024 * 1024;
 
-int create();
 int initialize(void *arg);
 
-int main(int argc, char *argv[], char *envp[]) {
+int main() {
+    // Check for root permission
     if (getuid())
     {
         std::cerr << "You need root permissions to create a container!\n";
         return 1;
-    };
-
-    if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " create" << std::endl;
-        return 1;
     }
 
-    std::string s = argv[1];
-    if (s == "create") {
-        return create();
-    } else {
-        std::cout << "invalid argument" << "\n";
-    }
-
-    return 0;
-}
-
-int create() {
     std::cout << "Creating container..." << std::endl;
 
     // Dynamically allocate memory for the child stack
