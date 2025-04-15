@@ -11,11 +11,20 @@ constexpr int STACK_SIZE = 1024 * 1024;
 
 int initialize(void *arg);
 
+const char * newRoot = "/container/alpine";
+
 int main() {
     // Check for root permission
     if (getuid())
     {
         std::cerr << "You need root permissions to create a container!\n";
+        return 1;
+    }
+
+    // Check for new root filesystem
+    if (access(newRoot, F_OK) != 0)
+    {
+        perror("container root path not found");
         return 1;
     }
 
@@ -59,7 +68,7 @@ int initialize(void *arg) {
     }
 
     // Change root to the new container filesystem
-    if (chroot("/container/alpine") != 0) {
+    if (chroot(newRoot) != 0) {
         perror("chroot failed");
         return 1;
     }
