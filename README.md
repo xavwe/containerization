@@ -25,8 +25,9 @@ After using software like docker a lot I wanted to understand the underlying bas
 
     ```bash
     mkdir build
-    cmake 
-    cmake --build ./build
+    cd build
+    cmake ..
+    cmake --build .
     ```
 
 3. **Run the containerization tool:**
@@ -34,7 +35,7 @@ After using software like docker a lot I wanted to understand the underlying bas
     > Ensure you are running as root or with appropriate privileges.
 
     ```bash
-    ./build/container
+    ./container
     ```
 
 ## Learning Resources
