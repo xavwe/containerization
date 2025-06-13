@@ -33,7 +33,6 @@
         packages = with pkgs; [
           cmake
           gcc
-          entr
           just
           alpineRootfs
         ];
