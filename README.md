@@ -25,16 +25,14 @@ After using software like docker a lot I wanted to understand the underlying bas
 2. **Compile the project:**
 
     ```bash
-    cmake .
-    cmake --build .
-    ```
+    just compile
 
 3. **Run the containerization tool:**
 
     > Ensure you are running as root or with appropriate privileges.
 
     ```bash
-    ./container
+    just run
     ```
 
 ## Learning Resources
