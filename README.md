@@ -7,34 +7,31 @@ After using software like docker a lot I wanted to understand the underlying bas
 
 ## Requirements
 
-- Linux
-- cmake
-- gcc
-- just
-- root privileges
-- [alpine linux mini root filesystem](https://www.alpinelinux.org/downloads/) located at /container/alpine
+- NixOS with flakes
+- direnv
 
 ## Build Instructions
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/xavwe/containerization.git
-    cd containerization
-    ```
+  ```bash
+  git clone https://github.com/xavwe/containerization.git
+  cd containerization
+  ```
 
 2. **Compile the project:**
 
-    ```bash
-    just compile
+  ```bash
+  just compile
+  ```
 
 3. **Run the containerization tool:**
 
-    > Ensure you are running as root or with appropriate privileges.
+  > Ensure you are running as root or with appropriate privileges.
 
-    ```bash
-    just run
-    ```
+  ```bash
+  just run
+  ```
 
 ## Learning Resources
 

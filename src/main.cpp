@@ -11,9 +11,13 @@ constexpr int STACK_SIZE = 1024 * 1024;
 
 int initialize(void *arg);
 
-const char * newRoot = "/container/alpine";
+const char* newRoot = std::getenv("ALPINE_ROOTFS");
 
 int main() {
+    if (newRoot == nullptr) {
+      std::cerr << "ALPINE_ROOTFS not set\n";
+    }
+
     // Check for root permission
     if (getuid())
     {
