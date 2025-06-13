@@ -10,6 +10,7 @@ After using software like docker a lot I wanted to understand the underlying bas
 - Linux
 - cmake
 - gcc
+- just
 - root privileges
 - [alpine linux mini root filesystem](https://www.alpinelinux.org/downloads/) located at /container/alpine
 
