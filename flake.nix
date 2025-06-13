@@ -13,7 +13,8 @@
         overlays = [
           (final: prev: {
             alpineRootfs = final.stdenv.mkDerivation {
-              name = "alpine-minirootfs";
+              pname = "alpine-minirootfs";
+              version = "3.22.0";
               src = final.fetchurl {
                 url = "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-minirootfs-3.22.0-x86_64.tar.gz";
                 sha256 = "sha256-GIeYhONbBxjwF6UP+FteZWgnnpcjP8QoIiKVhf6y+k0=";
