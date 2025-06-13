@@ -1,6 +1,9 @@
 # direnv
 .direnv/
 
+# build files
+build/
+
 # Prerequisites
 *.d
 
