@@ -3,4 +3,4 @@ project(container)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(container main.cpp)
+add_executable(container src/main.cpp)

@@ -25,9 +25,7 @@ After using software like docker a lot I wanted to understand the underlying bas
 2. **Compile the project:**
 
     ```bash
-    mkdir build
-    cd build
-    cmake ..
+    cmake .
     cmake --build .
     ```
 
